@@ -24,7 +24,7 @@ class StudentListView(LoginRequiredMixin, ListView):
 
     def get_queryset(self):
         queryset = super().get_queryset()
-        print("Students in queryset:", queryset)  # Debugging line
+        # print("Students in queryset:", queryset)  # Debugging line
         return queryset
 
 
