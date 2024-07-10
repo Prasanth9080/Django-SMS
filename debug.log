@@ -480,3 +480,4 @@ INFO 2024-07-10 14:18:48,889 "GET /static/plugins/Datatables/datatables.min.js H
 WARNING 2024-07-10 14:21:26,830 Method Not Allowed (GET): /logout/
 WARNING 2024-07-10 14:21:26,854 Method Not Allowed: /logout/
 WARNING 2024-07-10 14:21:26,854 "GET /logout/ HTTP/1.1" 405 0
+INFO 2024-07-10 14:35:10,005 C:\Users\prasa\OneDrive\Documents\Django-sms-git\Django-SMS\newvenv\Lib\site-packages\django\contrib\admin\apps.py changed, reloading.
