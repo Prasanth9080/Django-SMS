@@ -508,3 +508,8 @@ INFO 2024-07-10 14:57:42,074 C:\Users\prasa\OneDrive\Documents\Django-sms-git\Dj
 INFO 2024-07-10 14:57:43,054 Watching for file changes with StatReloader
 INFO 2024-07-10 14:58:46,933 C:\Users\prasa\OneDrive\Documents\Django-sms-git\Django-SMS\school_app\urls.py changed, reloading.
 INFO 2024-07-10 14:58:47,847 Watching for file changes with StatReloader
+INFO 2024-07-10 15:07:17,706 C:\Users\prasa\OneDrive\Documents\Django-sms-git\Django-SMS\apps\staffs\admin.py changed, reloading.
+INFO 2024-07-10 15:07:18,996 Watching for file changes with StatReloader
+INFO 2024-07-10 15:08:37,455 C:\Users\prasa\OneDrive\Documents\Django-sms-git\Django-SMS\apps\students\views.py changed, reloading.
+INFO 2024-07-10 15:08:38,562 Watching for file changes with StatReloader
+INFO 2024-07-10 15:13:42,164 C:\Users\prasa\OneDrive\Documents\Django-sms-git\Django-SMS\newvenv\Lib\site-packages\asgiref\__init__.py changed, reloading.
