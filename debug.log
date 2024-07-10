@@ -586,3 +586,4 @@ INFO 2024-07-10 12:49:39,154 "GET /static/plugins/fontawesome-free/webfonts/fa-r
 INFO 2024-07-10 12:49:51,566 Watching for file changes with StatReloader
 INFO 2024-07-10 12:50:10,641 "GET / HTTP/1.1" 200 11193
 INFO 2024-07-10 12:50:38,553 "GET /index/ HTTP/1.1" 200 11193
+INFO 2024-07-10 12:50:57,320 "GET /password_change/ HTTP/1.1" 200 11594
