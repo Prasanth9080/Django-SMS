@@ -2696,3 +2696,21 @@ INFO 2024-07-11 18:31:26,327 "GET /static/admin/img/icon-deletelink.svg HTTP/1.1
 INFO 2024-07-11 18:31:26,334 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
 INFO 2024-07-11 18:31:26,335 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
 INFO 2024-07-11 18:31:26,335 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+INFO 2024-07-11 18:35:47,437 "GET / HTTP/1.1" 302 0
+INFO 2024-07-11 18:35:47,478 "GET /accounts/login/?next=/ HTTP/1.1" 200 4380
+WARNING 2024-07-11 18:35:48,316 Not Found: /favicon.ico
+WARNING 2024-07-11 18:35:48,317 "GET /favicon.ico HTTP/1.1" 404 7223
+INFO 2024-07-11 18:35:58,310 "GET /accounts/login/?next=/ HTTP/1.1" 200 4380
+INFO 2024-07-11 18:35:59,182 "GET /accounts/login/?next=/ HTTP/1.1" 200 4380
+INFO 2024-07-11 18:36:09,650 "POST /login/ HTTP/1.1" 302 0
+INFO 2024-07-11 18:36:09,758 "GET / HTTP/1.1" 200 11368
+INFO 2024-07-11 18:36:09,785 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25807
+INFO 2024-07-11 18:36:09,813 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042927
+INFO 2024-07-11 18:36:09,894 "GET /static/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13584
+INFO 2024-07-11 18:36:10,161 "GET /static/dist/img/sclfav.png HTTP/1.1" 200 619
+INFO 2024-07-11 18:36:12,420 "GET /accounts/login/?next=/ HTTP/1.1" 200 4467
+INFO 2024-07-11 18:37:40,922 "GET /admin/ HTTP/1.1" 200 11237
+INFO 2024-07-11 18:37:47,858 "GET /finance/18/detail/ HTTP/1.1" 200 13145
+INFO 2024-07-11 18:37:50,167 "GET /logout/ HTTP/1.1" 302 0
+INFO 2024-07-11 18:37:50,174 "GET / HTTP/1.1" 302 0
+INFO 2024-07-11 18:37:50,188 "GET /accounts/login/?next=/ HTTP/1.1" 200 4489
