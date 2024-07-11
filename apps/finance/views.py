@@ -423,7 +423,7 @@ from django.http import HttpResponse
 
 from django.shortcuts import get_object_or_404, HttpResponse
 from .models import Invoice, InvoiceItem, Receipt  # Adjust based on your actual models
-from docx import Document
+# from docx import Document
 
 def download_invoice(request, invoice_id):
     # Fetch invoice details

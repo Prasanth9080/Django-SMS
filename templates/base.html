@@ -12,6 +12,7 @@
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="{% static 'plugins/fontawesome-free/css/all.min.css' %}">
   <link rel="stylesheet" href="{% static 'plugins/toastr/toastr.min.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <!-- overlayScrollbars -->
   <link rel="stylesheet"
     href="{% static 'plugins/overlayScrollbars/css/OverlayScrollbars.min.css' %}">
@@ -22,6 +23,8 @@
   <link
     href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
 </head>
 
 <body
@@ -89,7 +92,7 @@
               <i class="fas fa-key mr-2"></i> Change Password
             </a>
             <div class="dropdown-divider"></div>
-            <a href="{% url 'logout' %}" class="dropdown-item">
+            <a href="{% url 'login' %}" class="dropdown-item">
               <i class="fas fa-sign-out-alt"></i> Sign out
             </a>
           </div>
@@ -111,7 +114,7 @@
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
       <!-- Brand Logo -->
-      <a href="{% url 'home' %}" class="brand-link">{{ School_name | default:"Sample-School" }}</a>
+      <a href="{% url 'home' %}" class="brand-link">{{ School_name | default:"School" }}</a>
 
       <!-- Sidebar -->
       <div class="sidebar">
@@ -146,7 +149,7 @@
                 </p>
               </a>
             </li>
-            <li class="nav-header">Results</li>
+            <!-- <li class="nav-header">Results</li>
             <li class="nav-item">
               <a href="{% url 'create-result' %}" class="nav-link">
                 <i class="nav-icon fas fa-money-bill-alt"></i>
@@ -170,7 +173,7 @@
                   View Results
                 </p>
               </a>
-            </li>
+            </li> -->
 
             <li class="nav-header">Others</li>
             <li class="nav-item has-treeview">
@@ -270,7 +273,7 @@
                 </div>
                 <!-- ./card-body -->
 
-              </div>
+              </div> 
               {% endblock fullcard %}
               <!-- /.card -->
             </div>

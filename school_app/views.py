@@ -51,6 +51,8 @@ def change_password(request):
 from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import authenticate, login
+from django.views.generic import TemplateView
+
 
 def signup(request):
     if request.method == 'POST':
@@ -66,3 +68,13 @@ def signup(request):
     else:
         form = UserCreationForm()
     return render(request, 'signup.html', {'form': form})
+
+class IndexView(TemplateView):
+    template_name = 'dashboard.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['total_students'] = 100  # Replace with actual data
+        context['total_staff'] = 50      # Replace with actual data
+        return context
+

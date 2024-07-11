@@ -7,6 +7,7 @@ from django.urls import reverse_lazy
 from django.views.generic import ListView, TemplateView, View
 from django.views.generic.edit import CreateView, DeleteView, UpdateView
 
+
 from .forms import (
     AcademicSessionForm,
     AcademicTermForm,
@@ -32,6 +33,18 @@ class IndexView(LoginRequiredMixin, TemplateView):
 from django.contrib.auth.forms import UserCreationForm
 from django.shortcuts import render, redirect
 from django.urls import reverse
+# from django.shortcuts import render  
+# from django.http import HttpResponse
+
+
+# def setcookie(request):
+#     response = HttpResponse("Cookie Set")
+#     response.set_cookie('isloggedin', True)
+#     return response
+
+# def getcookie(request):
+#     loggedin = request.COOKIES['isloggedin']
+#     return HttpResponse("Login: " + loggedin)
 
 def signup(request):
     if request.method == 'POST':
