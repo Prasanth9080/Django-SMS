@@ -769,13 +769,13 @@ def download_invoice(request, invoice_id):
     styles = getSampleStyleSheet()
 
     # Add school logo to the top left
-    # logo_path = os.path.join(settings.STATIC_ROOT, 'dist/img/school.png')
-    logo_path = os.path.join(settings.STATIC_ROOT, 'F:\django-sms-git\Django-SMS\static\dist\img\school7.png')
+    logo_path = os.path.join(settings.STATIC_ROOT, 'dist/img/school.png')
+    # logo_path = os.path.join(settings.STATIC_ROOT, 'C:\Users\prasa\OneDrive\Documents\Django-sms-git\Django-SMS\static\dist\img\school7.png')
     p.drawImage(logo_path, 0.5 * inch, height - 1.5 * inch, width=1 * inch, height=1 * inch)
 
     # Add school address to the top left
     p.setFont("Helvetica", 10)
-    address_y = height - 0.8 * inch
+    address_y = height - 1 * inch
     p.drawString(1.75 * inch, address_y, "VERMANS INTERNATIONAL SCHOOL")
     address_y -= 0.15 * inch
     p.drawString(1.75 * inch, address_y, "452 Wilshire Blvd, Los Angeles, CA 90010")

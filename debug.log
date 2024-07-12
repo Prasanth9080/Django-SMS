@@ -4255,3 +4255,176 @@ INFO 2024-07-12 10:49:01,769 C:\Users\prasa\OneDrive\Documents\Django-sms-git\Dj
 INFO 2024-07-12 10:49:03,319 Watching for file changes with StatReloader
 INFO 2024-07-12 10:49:04,739 C:\Users\prasa\OneDrive\Documents\Django-sms-git\Django-SMS\school_app\views.py changed, reloading.
 INFO 2024-07-12 10:49:06,551 Watching for file changes with StatReloader
+INFO 2024-07-12 10:49:30,339 C:\Users\prasa\OneDrive\Documents\Django-sms-git\Django-SMS\apps\corecode\views.py changed, reloading.
+INFO 2024-07-12 10:49:32,020 Watching for file changes with StatReloader
+INFO 2024-07-12 10:49:33,550 C:\Users\prasa\OneDrive\Documents\Django-sms-git\Django-SMS\apps\corecode\views.py changed, reloading.
+INFO 2024-07-12 10:49:34,799 Watching for file changes with StatReloader
+INFO 2024-07-12 10:49:56,898 Watching for file changes with StatReloader
+INFO 2024-07-12 10:55:27,435 "GET / HTTP/1.1" 200 12965
+INFO 2024-07-12 10:55:27,735 "GET /static/Icons/businessman_180644.png HTTP/1.1" 200 24164
+INFO 2024-07-12 10:55:27,735 "GET /static/Icons/graduate-student-icon-graduation-gown-male-student_423491-3.jpg HTTP/1.1" 200 45578
+INFO 2024-07-12 10:55:32,889 "GET / HTTP/1.1" 200 12965
+INFO 2024-07-12 10:55:40,077 "GET /student/list HTTP/1.1" 200 17063
+INFO 2024-07-12 10:55:42,551 "GET /student/14/ HTTP/1.1" 200 13338
+INFO 2024-07-12 10:55:44,976 "GET /staff/list/ HTTP/1.1" 200 13059
+INFO 2024-07-12 10:55:49,739 "GET /staff/2/ HTTP/1.1" 200 12368
+INFO 2024-07-12 10:55:52,654 "GET /student/list HTTP/1.1" 200 17063
+INFO 2024-07-12 10:55:54,720 "GET /student/14/ HTTP/1.1" 200 13338
+INFO 2024-07-12 10:56:27,527 "GET /student/14/ HTTP/1.1" 200 13338
+INFO 2024-07-12 10:56:35,098 "GET /staff/list/ HTTP/1.1" 200 13059
+INFO 2024-07-12 10:56:36,993 "GET / HTTP/1.1" 200 12965
+INFO 2024-07-12 10:56:40,720 "GET /password_change/ HTTP/1.1" 200 14689
+INFO 2024-07-12 10:56:42,761 "GET /student/list HTTP/1.1" 200 17063
+INFO 2024-07-12 10:56:43,989 "GET /staff/list/ HTTP/1.1" 200 13059
+INFO 2024-07-12 10:56:53,871 "GET /staff/1/ HTTP/1.1" 200 12375
+INFO 2024-07-12 10:56:56,225 "GET /finance/list/ HTTP/1.1" 200 15468
+INFO 2024-07-12 10:56:57,318 "GET /finance/12/detail/ HTTP/1.1" 200 13356
+ERROR 2024-07-12 10:57:00,198 Internal Server Error: /finance/download-invoice/12/
+Traceback (most recent call last):
+  File "C:\Users\prasa\AppData\Local\Programs\Python\Python311\Lib\site-packages\reportlab\lib\utils.py", line 523, in open_for_read
+    return open_for_read_by_name(name,mode)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prasa\AppData\Local\Programs\Python\Python311\Lib\site-packages\reportlab\lib\utils.py", line 463, in open_for_read_by_name
+    return open(name,mode)
+           ^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'F:\\django-sms-git\\Django-SMS\\static\\dist\\img\\school7.png'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\prasa\AppData\Local\Programs\Python\Python311\Lib\site-packages\reportlab\lib\utils.py", line 530, in open_for_read
+    return BytesIO((datareader if name[:5].lower()=='data:' else rlUrlRead)(name))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prasa\AppData\Local\Programs\Python\Python311\Lib\site-packages\reportlab\lib\utils.py", line 476, in rlUrlRead
+    return urlopen(name).read()
+           ^^^^^^^^^^^^^
+  File "C:\Users\prasa\AppData\Local\Programs\Python\Python311\Lib\urllib\request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prasa\AppData\Local\Programs\Python\Python311\Lib\urllib\request.py", line 519, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prasa\AppData\Local\Programs\Python\Python311\Lib\urllib\request.py", line 541, in _open
+    return self._call_chain(self.handle_open, 'unknown',
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prasa\AppData\Local\Programs\Python\Python311\Lib\urllib\request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "C:\Users\prasa\AppData\Local\Programs\Python\Python311\Lib\urllib\request.py", line 1419, in unknown_open
+    raise URLError('unknown url type: %s' % type)
+urllib.error.URLError: <urlopen error unknown url type: f>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\prasa\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prasa\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prasa\OneDrive\Documents\Django-sms-git\Django-SMS\apps\finance\views.py", line 774, in download_invoice
+    p.drawImage(logo_path, 0.5 * inch, height - 1.5 * inch, width=1 * inch, height=1 * inch)
+  File "C:\Users\prasa\AppData\Local\Programs\Python\Python311\Lib\site-packages\reportlab\pdfgen\canvas.py", line 1002, in drawImage
+    imgObj = pdfdoc.PDFImageXObject(name, image, mask=mask)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prasa\AppData\Local\Programs\Python\Python311\Lib\site-packages\reportlab\pdfbase\pdfdoc.py", line 2109, in __init__
+    src = open_for_read(source)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prasa\AppData\Local\Programs\Python\Python311\Lib\site-packages\reportlab\lib\utils.py", line 534, in open_for_read
+    return open_for_read(name,mode)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prasa\AppData\Local\Programs\Python\Python311\Lib\site-packages\reportlab\lib\utils.py", line 532, in open_for_read
+    raise IOError('Cannot open resource "%s"' % name)
+OSError: Cannot open resource "F:\django-sms-git\Django-SMS\static\dist\img\school7.png"
+ERROR 2024-07-12 10:57:00,205 "GET /finance/download-invoice/12/ HTTP/1.1" 500 134416
+ERROR 2024-07-12 10:57:19,153 Internal Server Error: /finance/download-invoice/12/
+Traceback (most recent call last):
+  File "C:\Users\prasa\AppData\Local\Programs\Python\Python311\Lib\site-packages\reportlab\lib\utils.py", line 523, in open_for_read
+    return open_for_read_by_name(name,mode)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prasa\AppData\Local\Programs\Python\Python311\Lib\site-packages\reportlab\lib\utils.py", line 463, in open_for_read_by_name
+    return open(name,mode)
+           ^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'F:\\django-sms-git\\Django-SMS\\static\\dist\\img\\school7.png'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\prasa\AppData\Local\Programs\Python\Python311\Lib\site-packages\reportlab\lib\utils.py", line 530, in open_for_read
+    return BytesIO((datareader if name[:5].lower()=='data:' else rlUrlRead)(name))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prasa\AppData\Local\Programs\Python\Python311\Lib\site-packages\reportlab\lib\utils.py", line 476, in rlUrlRead
+    return urlopen(name).read()
+           ^^^^^^^^^^^^^
+  File "C:\Users\prasa\AppData\Local\Programs\Python\Python311\Lib\urllib\request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prasa\AppData\Local\Programs\Python\Python311\Lib\urllib\request.py", line 519, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prasa\AppData\Local\Programs\Python\Python311\Lib\urllib\request.py", line 541, in _open
+    return self._call_chain(self.handle_open, 'unknown',
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prasa\AppData\Local\Programs\Python\Python311\Lib\urllib\request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "C:\Users\prasa\AppData\Local\Programs\Python\Python311\Lib\urllib\request.py", line 1419, in unknown_open
+    raise URLError('unknown url type: %s' % type)
+urllib.error.URLError: <urlopen error unknown url type: f>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\prasa\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prasa\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prasa\OneDrive\Documents\Django-sms-git\Django-SMS\apps\finance\views.py", line 774, in download_invoice
+    p.drawImage(logo_path, 0.5 * inch, height - 1.5 * inch, width=1 * inch, height=1 * inch)
+  File "C:\Users\prasa\AppData\Local\Programs\Python\Python311\Lib\site-packages\reportlab\pdfgen\canvas.py", line 1002, in drawImage
+    imgObj = pdfdoc.PDFImageXObject(name, image, mask=mask)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prasa\AppData\Local\Programs\Python\Python311\Lib\site-packages\reportlab\pdfbase\pdfdoc.py", line 2109, in __init__
+    src = open_for_read(source)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prasa\AppData\Local\Programs\Python\Python311\Lib\site-packages\reportlab\lib\utils.py", line 534, in open_for_read
+    return open_for_read(name,mode)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\prasa\AppData\Local\Programs\Python\Python311\Lib\site-packages\reportlab\lib\utils.py", line 532, in open_for_read
+    raise IOError('Cannot open resource "%s"' % name)
+OSError: Cannot open resource "F:\django-sms-git\Django-SMS\static\dist\img\school7.png"
+ERROR 2024-07-12 10:57:19,155 "GET /finance/download-invoice/12/ HTTP/1.1" 500 134416
+INFO 2024-07-12 10:59:24,367 C:\Users\prasa\OneDrive\Documents\Django-sms-git\Django-SMS\apps\finance\views.py changed, reloading.
+INFO 2024-07-12 10:59:26,118 Watching for file changes with StatReloader
+INFO 2024-07-12 10:59:46,461 C:\Users\prasa\OneDrive\Documents\Django-sms-git\Django-SMS\apps\finance\views.py changed, reloading.
+INFO 2024-07-12 10:59:48,120 Watching for file changes with StatReloader
+INFO 2024-07-12 11:00:15,411 Watching for file changes with StatReloader
+INFO 2024-07-12 11:00:21,793 "GET / HTTP/1.1" 200 12965
+INFO 2024-07-12 11:00:21,933 "GET /static/Icons/graduate-student-icon-graduation-gown-male-student_423491-3.jpg HTTP/1.1" 304 0
+INFO 2024-07-12 11:00:21,933 "GET /static/Icons/businessman_180644.png HTTP/1.1" 304 0
+INFO 2024-07-12 11:00:25,524 "GET /finance/list/ HTTP/1.1" 200 15468
+INFO 2024-07-12 11:00:29,112 "GET /finance/12/detail/ HTTP/1.1" 200 13356
+INFO 2024-07-12 11:00:34,055 "GET /finance/download-invoice/12/ HTTP/1.1" 200 5014073
+INFO 2024-07-12 11:01:16,815 "GET /finance/14/detail/ HTTP/1.1" 200 13238
+INFO 2024-07-12 11:01:18,325 "GET /finance/download-invoice/14/ HTTP/1.1" 200 69016
+INFO 2024-07-12 11:02:46,062 C:\Users\prasa\OneDrive\Documents\Django-sms-git\Django-SMS\apps\finance\views.py changed, reloading.
+INFO 2024-07-12 11:02:47,897 Watching for file changes with StatReloader
+INFO 2024-07-12 11:02:57,880 C:\Users\prasa\OneDrive\Documents\Django-sms-git\Django-SMS\apps\finance\views.py changed, reloading.
+INFO 2024-07-12 11:02:59,593 Watching for file changes with StatReloader
+INFO 2024-07-12 11:03:06,586 "GET /finance/download-invoice/14/ HTTP/1.1" 200 69021
+INFO 2024-07-12 11:03:49,825 C:\Users\prasa\OneDrive\Documents\Django-sms-git\Django-SMS\apps\finance\views.py changed, reloading.
+INFO 2024-07-12 11:03:51,537 Watching for file changes with StatReloader
+INFO 2024-07-12 11:03:57,664 "GET /finance/download-invoice/14/ HTTP/1.1" 200 69012
+INFO 2024-07-12 11:04:12,823 C:\Users\prasa\OneDrive\Documents\Django-sms-git\Django-SMS\apps\finance\views.py changed, reloading.
+INFO 2024-07-12 11:04:14,338 Watching for file changes with StatReloader
+INFO 2024-07-12 11:04:24,342 C:\Users\prasa\OneDrive\Documents\Django-sms-git\Django-SMS\apps\finance\views.py changed, reloading.
+INFO 2024-07-12 11:04:27,351 Watching for file changes with StatReloader
+INFO 2024-07-12 11:04:28,716 "GET /finance/14/detail/ HTTP/1.1" 200 13238
+INFO 2024-07-12 11:04:30,457 "GET /finance/download-invoice/14/ HTTP/1.1" 200 69012
+INFO 2024-07-12 11:04:41,160 C:\Users\prasa\OneDrive\Documents\Django-sms-git\Django-SMS\apps\finance\views.py changed, reloading.
+INFO 2024-07-12 11:04:42,715 Watching for file changes with StatReloader
+INFO 2024-07-12 11:05:03,267 C:\Users\prasa\OneDrive\Documents\Django-sms-git\Django-SMS\apps\finance\views.py changed, reloading.
+INFO 2024-07-12 11:05:04,424 Watching for file changes with StatReloader

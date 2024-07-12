@@ -57,7 +57,10 @@ from django.conf.urls.static import static
 from django.urls import include, path
 from django.contrib import admin  # Import the admin module
 from django.contrib.auth import views as auth_views
-from . import views
+from . import views  
+from django.contrib import admin
+from django.urls import path, include
+
 
 urlpatterns = [
     path("admin/", admin.site.urls),  # Add this line for the admin panel

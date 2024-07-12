@@ -8,7 +8,11 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
+<<<<<<< HEAD
 set VIRTUAL_ENV=C:\Users\prasa\OneDrive\Desktop\Django-SMS-git\Django-SMS\venv
+=======
+set VIRTUAL_ENV=C:\Users\prasa\OneDrive\Documents\Django-sms-git\Django-SMS\venv
+>>>>>>> f11c6dfe4dac5bf5ab7bec429f691c1b69370e6a
 
 if not defined PROMPT set PROMPT=$P$G
 

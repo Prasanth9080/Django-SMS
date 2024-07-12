@@ -38,7 +38,11 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
+<<<<<<< HEAD
 VIRTUAL_ENV="C:\Users\prasa\OneDrive\Desktop\Django-SMS-git\Django-SMS\venv"
+=======
+VIRTUAL_ENV="C:\Users\prasa\OneDrive\Documents\Django-sms-git\Django-SMS\venv"
+>>>>>>> f11c6dfe4dac5bf5ab7bec429f691c1b69370e6a
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
