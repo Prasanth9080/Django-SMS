@@ -4211,3 +4211,16 @@ INFO 2024-07-12 10:32:10,638 "GET / HTTP/1.1" 200 11184
 INFO 2024-07-12 10:32:12,666 "GET / HTTP/1.1" 200 11184
 INFO 2024-07-12 10:32:15,005 "GET /student/list HTTP/1.1" 200 16739
 INFO 2024-07-12 10:32:16,403 "GET /student/14/ HTTP/1.1" 200 13014
+INFO 2024-07-12 10:35:32,270 C:\Users\prasa\OneDrive\Documents\Django-sms-git\Django-SMS\apps\corecode\views.py changed, reloading.
+INFO 2024-07-12 10:35:33,828 Watching for file changes with StatReloader
+INFO 2024-07-12 10:36:33,947 C:\Users\prasa\OneDrive\Documents\Django-sms-git\Django-SMS\apps\finance\views.py changed, reloading.
+INFO 2024-07-12 10:36:35,514 Watching for file changes with StatReloader
+INFO 2024-07-12 10:37:36,981 Watching for file changes with StatReloader
+INFO 2024-07-12 10:37:40,119 "GET / HTTP/1.1" 200 11184
+INFO 2024-07-12 10:37:43,131 "GET / HTTP/1.1" 200 11184
+INFO 2024-07-12 10:37:49,552 C:\Users\prasa\OneDrive\Documents\Django-sms-git\Django-SMS\apps\finance\views.py changed, reloading.
+INFO 2024-07-12 10:37:51,334 Watching for file changes with StatReloader
+INFO 2024-07-12 10:37:54,601 "GET / HTTP/1.1" 200 11184
+INFO 2024-07-12 10:37:57,660 "GET / HTTP/1.1" 200 11184
+INFO 2024-07-12 10:38:44,686 C:\Users\prasa\OneDrive\Documents\Django-sms-git\Django-SMS\apps\finance\views.py changed, reloading.
+INFO 2024-07-12 10:38:45,951 Watching for file changes with StatReloader
