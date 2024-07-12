@@ -3800,3 +3800,29 @@ INFO 2024-07-12 10:18:30,909 Watching for file changes with StatReloader
 INFO 2024-07-12 10:18:48,927 C:\Users\prasa\OneDrive\Documents\Django-sms-git\Django-SMS\school_app\views.py changed, reloading.
 INFO 2024-07-12 10:18:50,874 Watching for file changes with StatReloader
 INFO 2024-07-12 10:20:07,061 Watching for file changes with StatReloader
+INFO 2024-07-12 10:20:10,633 "GET / HTTP/1.1" 302 0
+INFO 2024-07-12 10:20:10,720 "GET /accounts/login/?next=/ HTTP/1.1" 200 4380
+INFO 2024-07-12 10:20:10,785 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 304 0
+INFO 2024-07-12 10:20:10,786 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 304 0
+INFO 2024-07-12 10:20:10,795 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 304 0
+INFO 2024-07-12 10:20:10,795 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 304 0
+INFO 2024-07-12 10:20:10,795 "GET /static/dist/css/login-page.css HTTP/1.1" 304 0
+INFO 2024-07-12 10:20:10,802 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 304 0
+INFO 2024-07-12 10:20:10,802 "GET /static/dist/img/school.png HTTP/1.1" 304 0
+INFO 2024-07-12 10:20:10,886 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 0
+INFO 2024-07-12 10:20:10,886 "GET /static/dist/js/demo.js HTTP/1.1" 304 0
+INFO 2024-07-12 10:20:10,886 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 304 0
+INFO 2024-07-12 10:20:10,886 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 304 0
+INFO 2024-07-12 10:20:10,888 "GET /static/dist/js/adminlte.js HTTP/1.1" 304 0
+INFO 2024-07-12 10:20:10,888 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 304 0
+INFO 2024-07-12 10:20:10,975 "GET /static/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 0
+WARNING 2024-07-12 10:20:11,486 Not Found: /favicon.ico
+WARNING 2024-07-12 10:20:11,486 "GET /favicon.ico HTTP/1.1" 404 7223
+INFO 2024-07-12 10:20:21,183 "POST /login/ HTTP/1.1" 200 4266
+INFO 2024-07-12 10:20:34,368 "POST /login/ HTTP/1.1" 302 0
+INFO 2024-07-12 10:20:34,466 "GET / HTTP/1.1" 200 11184
+INFO 2024-07-12 10:20:34,506 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 304 0
+INFO 2024-07-12 10:20:34,508 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 304 0
+INFO 2024-07-12 10:20:34,610 "GET /static/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 304 0
+INFO 2024-07-12 10:20:43,141 "GET /password_change/ HTTP/1.1" 200 11762
+INFO 2024-07-12 10:20:46,252 "GET / HTTP/1.1" 200 11184
