@@ -18,7 +18,7 @@ class Invoice(models.Model):
         default="active",
     )
     passport = models.ImageField(upload_to='passports/', null=True, blank=True)
-
+    date = models.DateTimeField(auto_now_add=True,)
 
     class Meta:
         ordering = ["student", "term"]

@@ -32,14 +32,14 @@
 
 
           <div class="float-right">
-            <h4>{{ object.surname }} </h4>
-            <h4>{{ object.firstname }} </h4>
-            <h4>{{ object.other_name }} </h4>
-            <h4>{{ object.registration_number }} </h4>
+            <h4>Surname:{{ object.surname }} </h4>
+            <h4>FirstName:{{ object.firstname }} </h4>
+            <h4>LastName:{{ object.other_name }} </h4>
+            <h4>Reg-No:{{ object.registration_number }} </h4>
           </div>
         </div>
-        <h5>{{ object.current_class }} </h5>
-        <h5>{{ object.get_gender_display }} | {{ object.get_current_status_display }}</h5>
+        <h5>Class:{{ object.current_class }} </h5>
+        <h5>Gender: {{ object.get_gender_display }} | Status:{{ object.get_current_status_display }}</h5>
 
       </div>
       <div class="col-sm-8">

@@ -6,38 +6,36 @@
 <div class="card-header">
   <div class="card-tools">
     <a href="{% url 'download-invoice' object.id %}" class="btn btn-tool">
-      <!-- <i class="fas fa-file-download"></i> -->
-      <!-- <i class="fas fa-cloud-download-alt"></i> -->
-      <!-- <i class="fas fa-file-word"></i> -->
-      <!-- <i class="fas fa-arrow-circle-down"></i> -->
       <i class="fas fa-download"></i>
-      Download Invoice in Word</a>
+      Download Invoice in PDF</a>
     <a href="{% url 'invoice-update' object.id %}" class="btn btn-tool">
       <i class="fas fa-edit"></i>Edit
     </a>
     <a href="{% url 'invoice-delete' object.id %}" class="btn btn-tool">
       <i class="fas fa-times"></i> Delete
-    </a>
+    </a> 
   </div>
 </div>
 {% endblock content-header %}
 
-
-
 {% block content %}
 <div class="row">
   <div class="col-sm-4">
-
-
     <!-- {% if object.passport %}
-      <img
-        src="{{ object.passport.url }}"
-        class="float-left rounded-circle mr-3" style="width: 120px; height: 120px;">
-    {% else %}
-      <img
-        src="{% static 'dist/img/avatar.png' %}"
-        class="float-left rounded-circle mr-3" style="width: 120px; height: 120px;">
-    {% endif %} -->
+    <img
+      src="{{ object.passport.url }}"
+      class="float-left rounded-circle mr-3" style="width: 120px; height: 120px;">
+  {% else %}
+    <img
+      src="{% static 'dist/img/avatar.png' %}"
+      class="float-left rounded-circle mr-3" style="width: 120px; height: 120px;">
+  {% endif %}  --> 
+
+  {% if object.student.passport %}
+    <img src="{{ object.student.passport.url }}" class="float-left rounded-circle mr-3" style="width: 120px; height: 120px;">
+{% else %}
+    <img src="{% static 'dist/img/avatar.png' %}" class="float-left rounded-circle mr-3" style="width: 120px; height: 120px;">
+{% endif %}
 
 
     <h3>{{ object }} </h3>
@@ -52,7 +50,7 @@
   </div>
   <div class="col-sm-8">
     <table class="table table-sm table-bordered">
-      Invoice Breakdown</br>
+      <caption>Invoice Breakdown</caption>
       <thead class="thead-light">
         <tr>
           <th>S/N</th>
@@ -111,12 +109,11 @@
     {% for receipt in receipts %}
     <tr>
       <td>{{ forloop.counter }}</td>
-      <td>{{ receipt.amount_paid}}</td>
-      <td>{{ receipt.date_paid}}</td>
-      <td>{{ receipt.comment}}</td>
+      <td>{{ receipt.amount_paid }}</td>
+      <td>{{ receipt.date_paid }}</td>
+      <td>{{ receipt.comment }}</td>
     </tr>
     {% endfor %}
   </tbody>
 </table>
 {% endblock content %}
-

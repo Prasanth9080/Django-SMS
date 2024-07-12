@@ -1,10 +1,12 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block title %}Students{% endblock title %}
 
 {% block breadcrumb %}
 <a class="btn btn-primary" href="{% url 'student-create' %}"><i class="fas fa-plus"></i> New student</a>
-<a class="btn btn-primary" href="{% url 'student-upload' %}"><i class="fas fa-upload"></i> Upload students</a>
+<!-- <a class="btn btn-primary" href="{% url 'student-upload' %}"><i class="fas fa-upload"></i> Upload students</a> -->
 {% endblock breadcrumb %}
 
 {% block content %}
@@ -13,24 +15,35 @@
       <thead class="thead-light">
         <tr>
           <th>S/N</th>
-          <th>Fullname</th>
           <th>Registration Number</th>
+          <th>Fullname</th>
           <th>Current Class</th>
           <th>Gender</th>
           <th>Mobile Phone Number</th>
           <th>Status</th>
+          <th>Address</th>
+          <th>Passport</th>
         </tr>
       </thead>
       <tbody>
         {% for student in students %}
           <tr class='clickable-row' data-href="{% url 'student-detail' student.id %}">
             <td>{{ forloop.counter }}</td>
-            <td>{{ student.surname }} {{ student.firstname }} {{ student.other_name }}</td>
             <td>{{ student.registration_number }}</td>
+            <td>{{ student.surname }} {{ student.firstname }} {{ student.other_name }}</td>
             <td>{{ student.current_class }}</td>
             <td>{{ student.get_gender_display }}</td>
             <td>{{ student.parent_mobile_number }}</td>
             <td>{{ student.get_current_status_display }}</td>
+            <td>{{ student.address }}</td>
+            <td>
+              {% if student.passport %}
+                <img src="{{ student.passport.url }}" alt="{{ student.fullname }}" style="width: 50px; height: auto;">
+              {% else %}
+                <img src="{% static 'dist/img/avatar.png' %}" alt="Default Avatar" style="width: 50px; height: auto;">
+                <!-- <img src="{% static 'dist/img/avatar.png' %}" class="float-left rounded-circle mr-3" style="width: 120px; height: 120px;"> -->
+              {% endif %}
+            </td>
           </tr>
         {% endfor %}
       </tbody>
@@ -40,6 +53,9 @@
 
 {% block morejs %}
 <script>
-  $('#studenttable').DataTable();
+   $('#studenttable').DataTable({
+    select: false
+    });
 </script>
+
 {% endblock morejs %}
