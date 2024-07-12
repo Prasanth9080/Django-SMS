@@ -4224,3 +4224,28 @@ INFO 2024-07-12 10:37:54,601 "GET / HTTP/1.1" 200 11184
 INFO 2024-07-12 10:37:57,660 "GET / HTTP/1.1" 200 11184
 INFO 2024-07-12 10:38:44,686 C:\Users\prasa\OneDrive\Documents\Django-sms-git\Django-SMS\apps\finance\views.py changed, reloading.
 INFO 2024-07-12 10:38:45,951 Watching for file changes with StatReloader
+INFO 2024-07-12 10:41:09,812 C:\Users\prasa\OneDrive\Documents\Django-sms-git\Django-SMS\apps\corecode\views.py changed, reloading.
+INFO 2024-07-12 10:41:11,114 Watching for file changes with StatReloader
+INFO 2024-07-12 10:41:18,888 C:\Users\prasa\OneDrive\Documents\Django-sms-git\Django-SMS\school_app\views.py changed, reloading.
+INFO 2024-07-12 10:41:19,925 Watching for file changes with StatReloader
+INFO 2024-07-12 10:41:36,116 C:\Users\prasa\OneDrive\Documents\Django-sms-git\Django-SMS\school_app\urls.py changed, reloading.
+INFO 2024-07-12 10:41:37,811 Watching for file changes with StatReloader
+INFO 2024-07-12 10:42:03,117 Watching for file changes with StatReloader
+INFO 2024-07-12 10:43:32,554 C:\Users\prasa\OneDrive\Documents\Django-sms-git\Django-SMS\school_app\urls.py changed, reloading.
+INFO 2024-07-12 10:43:34,277 Watching for file changes with StatReloader
+WARNING 2024-07-12 10:43:48,876 Not Found: /
+WARNING 2024-07-12 10:43:48,880 "GET / HTTP/1.1" 404 2066
+INFO 2024-07-12 10:43:55,945 C:\Users\prasa\OneDrive\Documents\Django-sms-git\Django-SMS\school_app\urls.py changed, reloading.
+INFO 2024-07-12 10:43:57,708 Watching for file changes with StatReloader
+WARNING 2024-07-12 10:43:59,994 Not Found: /
+WARNING 2024-07-12 10:43:59,994 "GET / HTTP/1.1" 404 2062
+INFO 2024-07-12 10:44:09,770 C:\Users\prasa\OneDrive\Documents\Django-sms-git\Django-SMS\school_app\urls.py changed, reloading.
+INFO 2024-07-12 10:44:11,496 Watching for file changes with StatReloader
+WARNING 2024-07-12 10:44:13,857 Not Found: /
+WARNING 2024-07-12 10:44:13,859 "GET / HTTP/1.1" 404 2063
+INFO 2024-07-12 10:44:26,695 C:\Users\prasa\OneDrive\Documents\Django-sms-git\Django-SMS\school_app\urls.py changed, reloading.
+INFO 2024-07-12 10:44:28,181 Watching for file changes with StatReloader
+INFO 2024-07-12 10:44:55,580 Watching for file changes with StatReloader
+INFO 2024-07-12 10:47:19,924 Watching for file changes with StatReloader
+INFO 2024-07-12 10:47:23,955 "GET / HTTP/1.1" 200 11184
+INFO 2024-07-12 10:47:26,621 "GET / HTTP/1.1" 200 11184
