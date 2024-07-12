@@ -4207,3 +4207,7 @@ Traceback (most recent call last):
 django.db.utils.OperationalError: no such column: finance_invoice.date
 ERROR 2024-07-12 10:31:06,609 "GET /student/14/ HTTP/1.1" 500 245816
 INFO 2024-07-12 10:32:08,051 Watching for file changes with StatReloader
+INFO 2024-07-12 10:32:10,638 "GET / HTTP/1.1" 200 11184
+INFO 2024-07-12 10:32:12,666 "GET / HTTP/1.1" 200 11184
+INFO 2024-07-12 10:32:15,005 "GET /student/list HTTP/1.1" 200 16739
+INFO 2024-07-12 10:32:16,403 "GET /student/14/ HTTP/1.1" 200 13014
