@@ -734,6 +734,163 @@ from django.http import HttpResponse
 
 # ##########################
 
+# from django.shortcuts import get_object_or_404, HttpResponse
+# from .models import Invoice, InvoiceItem, Receipt
+# from reportlab.lib.pagesizes import A4
+# from reportlab.pdfgen import canvas
+# from reportlab.lib import colors
+# from reportlab.platypus import Table, TableStyle
+# from reportlab.lib.styles import getSampleStyleSheet
+# from reportlab.lib.units import inch
+# from io import BytesIO
+# from django.conf import settings
+# import os
+# import random
+
+# def generate_unique_invoice_number():
+#     return f"{random.randint(100000, 999999)}"
+
+# def download_invoice(request, invoice_id):
+#     # Fetch invoice details
+#     invoice = get_object_or_404(Invoice, pk=invoice_id)
+#     items = InvoiceItem.objects.filter(invoice=invoice)
+#     receipts = Receipt.objects.filter(invoice=invoice)
+
+#     # Generate a unique invoice number
+#     invoice_number = generate_unique_invoice_number()
+
+#     # Create a new PDF
+#     response = HttpResponse(content_type='application/pdf')
+#     response['Content-Disposition'] = f'attachment; filename=invoice_{invoice_number}.pdf'
+
+#     buffer = BytesIO()
+#     p = canvas.Canvas(buffer, pagesize=A4)
+#     width, height = A4
+#     styles = getSampleStyleSheet()
+
+#     # Add school logo to the top left
+#     # logo_path = os.path.join(settings.STATIC_ROOT, 'dist/img/school.png')
+#     logo_path = os.path.join(settings.STATIC_ROOT, 'F:\django-sms-git\Django-SMS\static\dist\img\school7.png')
+#     p.drawImage(logo_path, 0.5 * inch, height - 1.5 * inch, width=1 * inch, height=1 * inch)
+
+#     # Add school address to the top left
+#     p.setFont("Helvetica", 10)
+#     address_y = height - 0.8 * inch
+#     p.drawString(1.75 * inch, address_y, "VERMANS INTERNATIONAL SCHOOL")
+#     address_y -= 0.15 * inch
+#     p.drawString(1.75 * inch, address_y, "452 Wilshire Blvd, Los Angeles, CA 90010")
+#     address_y -= 0.15 * inch
+#     p.drawString(1.75 * inch, address_y, "222-555-7777")
+#     address_y -= 0.15 * inch
+#     p.drawString(1.75 * inch, address_y, "inquiries@vermans.com")
+#     address_y -= 0.15 * inch
+#     p.drawString(1.75 * inch, address_y, "www.vermans.com")
+
+#     # Add invoice details to the top right
+#     p.setFont("Helvetica", 12)
+#     p.setFillColor(colors.black)
+#     details_y = height - 0.9 * inch
+#     details_x = width - 2.5 * inch
+#     p.drawString(details_x, details_y, "Invoice Date: " + invoice.date.strftime('%B %d, %Y'))  # Replace 'date' with the appropriate field
+#     details_y -= 0.25 * inch
+#     p.drawString(details_x, details_y, f"Invoice No.: {invoice_number}")
+
+#     # Add Invoice label
+#     # p.setFont("Helvetica-Bold", 20)
+#     # p.setFillColor(colors.red)
+#     # p.drawString(1 * inch, height - 2 * inch, "INVOICE123")
+
+#     # Section: Student details on the left, student image on the right
+#     y = height - 3 * inch
+#     p.setFont("Helvetica", 12)
+#     p.setFillColor(colors.black)
+#     text_x = 1 * inch
+
+#     p.drawString(text_x, y, f'Student Name: {invoice.student}')
+#     y -= 0.25 * inch
+#     p.drawString(text_x, y, f'Session: {invoice.session}')
+#     y -= 0.25 * inch
+#     p.drawString(text_x, y, f'Term: {invoice.term}')
+#     y -= 0.25 * inch
+#     p.drawString(text_x, y, f'Class: {invoice.class_for}')
+#     y -= 0.25 * inch
+#     p.drawString(text_x, y, f'Status: {invoice.get_status_display()}')
+#     y -= 0.25 * inch
+#     p.drawString(text_x, y, f'Expected Balance: {invoice.balance()}')
+
+#     # Student image on the right
+#     image_y = height - 3 * inch
+#     image_path = os.path.join(settings.MEDIA_ROOT, invoice.student.passport.name) if invoice.student.passport else os.path.join(settings.STATIC_ROOT, 'dist/img/avatar.png')
+#     p.drawImage(image_path, width - 2.5 * inch, image_y - 1 * inch, width=1 * inch, height=1 * inch)
+
+#     # Invoice Breakdown Table
+#     y -= 0.5 * inch
+#     p.setFont("Helvetica-Bold", 14)
+#     p.drawString(1 * inch, y, 'Invoice Breakdown')
+#     y -= 0.25 * inch
+
+#     data = [['S/N', 'Description', 'Amount']]
+#     for i, item in enumerate(items, start=1):
+#         data.append([i, item.description, item.amount])
+#     data.append(['', 'Total Amount this term', invoice.amount_payable()])
+#     data.append(['', 'Balance from previous term', invoice.balance_from_previous_term])
+#     data.append(['', 'Total Amount Payable', invoice.total_amount_payable()])
+#     data.append(['', 'Total Amount Paid', invoice.total_amount_paid()])
+
+#     table = Table(data, colWidths=[0.5 * inch, 4 * inch, 1.5 * inch])
+#     table.setStyle(TableStyle([
+#         ('BACKGROUND', (0, 0), (-1, 0), colors.grey),
+#         ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
+#         ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
+#         ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
+#         ('BOTTOMPADDING', (0, 0), (-1, 0), 12),
+#         ('BACKGROUND', (0, 1), (-1, -1), colors.beige),
+#         ('GRID', (0, 0), (-1, -1), 1, colors.black),
+#     ]))
+
+#     table.wrapOn(p, width, height)
+#     table.drawOn(p, 1 * inch, y - (len(data) * 0.25 * inch))
+
+#     # Adjust y position for the next section
+#     y -= (len(data) * 0.25 * inch) + 0.75 * inch
+
+#     # Payment History Table
+#     p.setFont("Helvetica-Bold", 14)
+#     p.drawString(1 * inch, y, 'Payment History')
+#     y -= 0.25 * inch
+
+#     data = [['S/N', 'Amount Paid', 'Date Paid', 'Comment Paid']]
+#     for i, receipt in enumerate(receipts, start=1):
+#         data.append([i, receipt.amount_paid, receipt.date_paid.strftime('%Y-%m-%d'), receipt.comment])
+
+#     table = Table(data, colWidths=[0.5 * inch, 1.5 * inch, 1.5 * inch, 3 * inch])
+#     table.setStyle(TableStyle([
+#         ('BACKGROUND', (0, 0), (-1, 0), colors.grey),
+#         ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
+#         ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
+#         ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
+#         ('BOTTOMPADDING', (0, 0), (-1, 0), 12),
+#         ('BACKGROUND', (0, 1), (-1, -1), colors.beige),
+#         ('GRID', (0, 0), (-1, -1), 1, colors.black),
+#     ]))
+
+#     table.wrapOn(p, width, height)
+#     table.drawOn(p, 1 * inch, y - (len(data) * 0.25 * inch))
+
+#     # Finish up the PDF
+#     p.showPage()
+#     p.save()
+
+#     pdf = buffer.getvalue()
+#     buffer.close()
+#     response.write(pdf)
+#     return response
+
+
+
+
+
+###--------->Properly download pdf format and Invoice Date,time,id, and school logo,address,
 from django.shortcuts import get_object_or_404, HttpResponse
 from .models import Invoice, InvoiceItem, Receipt
 from reportlab.lib.pagesizes import A4
@@ -746,6 +903,7 @@ from io import BytesIO
 from django.conf import settings
 import os
 import random
+from datetime import datetime  # Import the datetime module
 
 def generate_unique_invoice_number():
     return f"{random.randint(100000, 999999)}"
@@ -770,7 +928,7 @@ def download_invoice(request, invoice_id):
 
     # Add school logo to the top left
     # logo_path = os.path.join(settings.STATIC_ROOT, 'dist/img/school.png')
-    logo_path = os.path.join(settings.STATIC_ROOT, 'F:\django-sms-git\Django-SMS\static\dist\img\school7.png')
+    logo_path = os.path.join(settings.STATIC_ROOT, 'dist/img/school7.png')
     p.drawImage(logo_path, 0.5 * inch, height - 1.5 * inch, width=1 * inch, height=1 * inch)
 
     # Add school address to the top left
@@ -787,18 +945,19 @@ def download_invoice(request, invoice_id):
     p.drawString(1.75 * inch, address_y, "www.vermans.com")
 
     # Add invoice details to the top right
+    current_datetime = datetime.now()
     p.setFont("Helvetica", 12)
     p.setFillColor(colors.black)
     details_y = height - 0.9 * inch
     details_x = width - 2.5 * inch
-    p.drawString(details_x, details_y, "Invoice Date: " + invoice.date.strftime('%B %d, %Y'))  # Replace 'date' with the appropriate field
+    p.drawString(details_x, details_y, "Invoice Date: " + current_datetime.strftime('%B %d, %Y'))  # Current date
+    details_y -= 0.25 * inch
+    p.drawString(details_x, details_y, "Invoice Time: " + current_datetime.strftime('%H:%M:%S'))  # Current time
     details_y -= 0.25 * inch
     p.drawString(details_x, details_y, f"Invoice No.: {invoice_number}")
 
-    # Add Invoice label
-    # p.setFont("Helvetica-Bold", 20)
-    # p.setFillColor(colors.red)
-    # p.drawString(1 * inch, height - 2 * inch, "INVOICE123")
+
+
 
     # Section: Student details on the left, student image on the right
     y = height - 3 * inch
@@ -886,11 +1045,6 @@ def download_invoice(request, invoice_id):
     response.write(pdf)
     return response
 
-
-
-
-
-#......................................
 
 
 

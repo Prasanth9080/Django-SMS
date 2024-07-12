@@ -2714,3 +2714,377 @@ INFO 2024-07-11 18:37:47,858 "GET /finance/18/detail/ HTTP/1.1" 200 13145
 INFO 2024-07-11 18:37:50,167 "GET /logout/ HTTP/1.1" 302 0
 INFO 2024-07-11 18:37:50,174 "GET / HTTP/1.1" 302 0
 INFO 2024-07-11 18:37:50,188 "GET /accounts/login/?next=/ HTTP/1.1" 200 4489
+INFO 2024-07-11 18:42:58,245 "POST /login/ HTTP/1.1" 200 4266
+INFO 2024-07-11 18:43:33,760 "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-07-11 18:43:33,855 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2214
+INFO 2024-07-11 18:43:33,874 "GET /static/admin/css/login.css HTTP/1.1" 200 939
+INFO 2024-07-11 18:43:57,301 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-07-11 18:43:57,395 "GET /admin/ HTTP/1.1" 200 11237
+INFO 2024-07-11 18:44:14,766 "GET /admin/ HTTP/1.1" 200 11237
+INFO 2024-07-11 18:44:16,083 "GET /admin/ HTTP/1.1" 200 11237
+WARNING 2024-07-11 18:55:53,380 Forbidden (CSRF token missing or incorrect.): /login/
+WARNING 2024-07-11 18:55:53,455 "POST /login/ HTTP/1.1" 403 2519
+WARNING 2024-07-11 18:55:58,596 Forbidden (CSRF token missing or incorrect.): /login/
+WARNING 2024-07-11 18:55:58,666 "POST /login/ HTTP/1.1" 403 2519
+WARNING 2024-07-11 18:56:03,168 Forbidden (CSRF token missing or incorrect.): /login/
+WARNING 2024-07-11 18:56:03,251 "POST /login/ HTTP/1.1" 403 2519
+INFO 2024-07-11 18:56:05,702 "GET / HTTP/1.1" 200 11392
+INFO 2024-07-12 10:10:26,742 Watching for file changes with StatReloader
+INFO 2024-07-12 10:10:32,740 "GET / HTTP/1.1" 302 0
+INFO 2024-07-12 10:10:32,776 "GET /accounts/login/?next=/ HTTP/1.1" 200 4489
+INFO 2024-07-12 10:10:50,159 "POST /login/ HTTP/1.1" 302 0
+INFO 2024-07-12 10:10:50,234 "GET / HTTP/1.1" 200 11392
+INFO 2024-07-12 10:10:50,250 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 304 0
+INFO 2024-07-12 10:10:50,251 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 304 0
+INFO 2024-07-12 10:10:50,310 "GET /static/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 304 0
+INFO 2024-07-12 10:10:51,775 "GET / HTTP/1.1" 200 11392
+INFO 2024-07-12 10:11:02,563 "GET /finance/list/ HTTP/1.1" 200 14947
+INFO 2024-07-12 10:11:03,972 "GET /finance/21/detail/ HTTP/1.1" 200 13398
+INFO 2024-07-12 10:11:03,992 "GET /static/dist/img/avatar.png HTTP/1.1" 304 0
+INFO 2024-07-12 10:11:05,542 "GET /finance/download-invoice/21/ HTTP/1.1" 200 111292
+INFO 2024-07-12 10:11:24,922 "GET /student/list HTTP/1.1" 200 18525
+INFO 2024-07-12 10:11:25,042 "GET /media/students/passports/2_3.jpg HTTP/1.1" 304 0
+INFO 2024-07-12 10:11:25,115 "GET /media/students/passports/884300ec69957bcc0fcdfd5008df04b17c8ddeff-cover.png HTTP/1.1" 304 0
+INFO 2024-07-12 10:11:25,189 "GET /media/students/passports/laptop-593673_1920.jpg HTTP/1.1" 304 0
+INFO 2024-07-12 10:11:25,271 "GET /media/students/passports/how-to-be-a-full-stack-developer.png HTTP/1.1" 304 0
+INFO 2024-07-12 10:11:25,348 "GET /media/students/passports/14851536_5525982_mhG407V.jpg HTTP/1.1" 304 0
+INFO 2024-07-12 10:11:25,423 "GET /media/students/passports/34745535_8183518.jpg HTTP/1.1" 304 0
+INFO 2024-07-12 10:11:25,489 "GET /media/students/passports/logo2.jpg HTTP/1.1" 304 0
+INFO 2024-07-12 10:11:25,636 "GET /media/students/passports/md-asx-chennai-final-my-work.jpg HTTP/1.1" 304 0
+INFO 2024-07-12 10:11:25,715 "GET /media/students/passports/rocks.jpg HTTP/1.1" 304 0
+INFO 2024-07-12 10:11:26,694 "GET /media/students/passports/phoenix_bird_web_2_1.gif HTTP/1.1" 200 52289497
+INFO 2024-07-12 10:11:28,910 "GET /student/26/ HTTP/1.1" 200 13229
+INFO 2024-07-12 10:11:31,116 "GET /student/26/update/ HTTP/1.1" 200 15455
+INFO 2024-07-12 10:11:42,355 "POST /student/26/update/ HTTP/1.1" 302 0
+INFO 2024-07-12 10:11:42,449 "GET /student/26/ HTTP/1.1" 200 13382
+INFO 2024-07-12 10:11:42,565 "GET /media/students/passports/school4.png HTTP/1.1" 200 14315
+INFO 2024-07-12 10:11:45,342 "GET /finance/list/ HTTP/1.1" 200 14947
+INFO 2024-07-12 10:11:46,951 "GET /finance/21/detail/ HTTP/1.1" 200 13408
+INFO 2024-07-12 10:11:47,040 "GET /media/students/passports/school4.png HTTP/1.1" 304 0
+INFO 2024-07-12 10:11:49,591 "GET /finance/download-invoice/21/ HTTP/1.1" 200 109378
+INFO 2024-07-12 10:12:09,901 "GET /site-config HTTP/1.1" 200 12393
+INFO 2024-07-12 10:30:59,450 "GET /student/list HTTP/1.1" 200 18380
+INFO 2024-07-12 10:30:59,659 "GET /media/students/passports/school4.png HTTP/1.1" 304 0
+INFO 2024-07-12 10:31:00,662 "GET /media/students/passports/phoenix_bird_web_2_1.gif HTTP/1.1" 200 52289497
+INFO 2024-07-12 10:31:04,005 "GET /student/7/ HTTP/1.1" 200 12701
+INFO 2024-07-12 10:56:12,952 "GET /student/list HTTP/1.1" 200 18380
+INFO 2024-07-12 10:56:13,205 "GET /media/students/passports/school4.png HTTP/1.1" 304 0
+INFO 2024-07-12 10:56:17,646 "GET /media/students/passports/phoenix_bird_web_2_1.gif HTTP/1.1" 200 52289497
+INFO 2024-07-12 11:02:12,817 "GET /student/27/ HTTP/1.1" 200 12727
+INFO 2024-07-12 11:02:15,920 "GET /finance/list/ HTTP/1.1" 200 14947
+INFO 2024-07-12 11:02:16,597 "GET /finance/19/detail/ HTTP/1.1" 200 13412
+INFO 2024-07-12 11:02:18,245 "GET /finance/download-invoice/19/ HTTP/1.1" 200 719444
+INFO 2024-07-12 11:05:10,849 "GET /finance/download-invoice/19/ HTTP/1.1" 200 719442
+INFO 2024-07-12 11:05:29,714 "GET /finance/10/detail/ HTTP/1.1" 200 13013
+INFO 2024-07-12 11:05:31,608 "GET /finance/download-invoice/10/ HTTP/1.1" 200 712151
+INFO 2024-07-12 11:05:47,655 "GET /finance/list/ HTTP/1.1" 200 14947
+INFO 2024-07-12 11:05:49,830 "GET /finance/21/detail/ HTTP/1.1" 200 13408
+INFO 2024-07-12 11:05:49,925 "GET /media/students/passports/school4.png HTTP/1.1" 304 0
+INFO 2024-07-12 11:05:53,843 "GET /finance/download-invoice/21/ HTTP/1.1" 200 109378
+INFO 2024-07-12 11:06:37,155 F:\django-sms-git\Django-SMS\apps\finance\views.py changed, reloading.
+INFO 2024-07-12 11:06:38,997 Watching for file changes with StatReloader
+INFO 2024-07-12 11:06:42,354 "GET /finance/21/detail/ HTTP/1.1" 200 13408
+INFO 2024-07-12 11:06:42,557 "GET /static/dist/img/sclfav.png HTTP/1.1" 304 0
+INFO 2024-07-12 11:06:44,030 "GET /finance/download-invoice/21/ HTTP/1.1" 200 109380
+INFO 2024-07-12 11:08:04,467 "GET /finance/21/detail/ HTTP/1.1" 200 13408
+INFO 2024-07-12 11:08:07,276 "GET /finance/21/update/ HTTP/1.1" 200 19508
+INFO 2024-07-12 11:08:12,949 "POST /finance/21/update/ HTTP/1.1" 302 0
+INFO 2024-07-12 11:08:13,040 "GET /finance/21/detail/ HTTP/1.1" 200 13408
+INFO 2024-07-12 11:08:14,613 "GET /finance/download-invoice/21/ HTTP/1.1" 200 109375
+INFO 2024-07-12 11:12:49,894 F:\django-sms-git\Django-SMS\apps\finance\views.py changed, reloading.
+INFO 2024-07-12 11:12:52,366 Watching for file changes with StatReloader
+INFO 2024-07-12 11:13:29,361 F:\django-sms-git\Django-SMS\apps\finance\views.py changed, reloading.
+INFO 2024-07-12 11:13:30,347 Watching for file changes with StatReloader
+INFO 2024-07-12 11:13:34,916 "GET /finance/21/detail/ HTTP/1.1" 200 13408
+INFO 2024-07-12 11:13:35,035 "GET /media/students/passports/school4.png HTTP/1.1" 304 0
+INFO 2024-07-12 11:13:36,475 "GET /finance/download-invoice/21/ HTTP/1.1" 200 67212
+INFO 2024-07-12 11:13:47,741 "GET /student/list HTTP/1.1" 200 18380
+INFO 2024-07-12 11:13:49,416 "GET /media/students/passports/phoenix_bird_web_2_1.gif HTTP/1.1" 200 52289497
+INFO 2024-07-12 11:13:58,509 "GET /finance/list/ HTTP/1.1" 200 14947
+INFO 2024-07-12 11:14:00,126 "GET /finance/10/detail/ HTTP/1.1" 200 13013
+INFO 2024-07-12 11:14:02,337 "GET /finance/download-invoice/10/ HTTP/1.1" 200 669989
+INFO 2024-07-12 11:14:18,775 "GET /finance/18/detail/ HTTP/1.1" 200 13145
+INFO 2024-07-12 11:14:20,270 "GET /finance/download-invoice/18/ HTTP/1.1" 200 74330
+INFO 2024-07-12 11:14:31,000 "GET /finance/19/detail/ HTTP/1.1" 200 13412
+INFO 2024-07-12 11:14:33,633 "GET /finance/download-invoice/19/ HTTP/1.1" 200 677281
+INFO 2024-07-12 11:21:25,172 F:\django-sms-git\Django-SMS\apps\finance\views.py changed, reloading.
+INFO 2024-07-12 11:21:27,224 Watching for file changes with StatReloader
+INFO 2024-07-12 11:21:29,887 "GET /finance/19/detail/ HTTP/1.1" 200 13412
+INFO 2024-07-12 11:21:32,682 "GET /finance/download-invoice/19/ HTTP/1.1" 200 719462
+INFO 2024-07-12 11:21:53,479 "GET /finance/download-invoice/19/ HTTP/1.1" 200 719462
+INFO 2024-07-12 11:23:56,101 F:\django-sms-git\Django-SMS\apps\finance\views.py changed, reloading.
+INFO 2024-07-12 11:23:57,586 Watching for file changes with StatReloader
+INFO 2024-07-12 11:24:03,597 "GET /finance/19/detail/ HTTP/1.1" 200 13412
+INFO 2024-07-12 11:24:05,380 "GET /finance/download-invoice/19/ HTTP/1.1" 200 719444
+INFO 2024-07-12 11:24:12,569 "GET /finance/list/ HTTP/1.1" 200 14947
+INFO 2024-07-12 11:24:13,602 "GET /finance/21/detail/ HTTP/1.1" 200 13408
+INFO 2024-07-12 11:24:13,711 "GET /media/students/passports/school4.png HTTP/1.1" 304 0
+INFO 2024-07-12 11:24:15,395 "GET /finance/download-invoice/21/ HTTP/1.1" 200 109375
+INFO 2024-07-12 11:24:23,428 "GET /finance/list/ HTTP/1.1" 200 14947
+INFO 2024-07-12 11:24:25,607 "GET /finance/15/detail/ HTTP/1.1" 200 13128
+INFO 2024-07-12 11:24:27,475 "GET /finance/download-invoice/15/ HTTP/1.1" 200 309066
+INFO 2024-07-12 11:26:38,413 F:\django-sms-git\Django-SMS\apps\finance\views.py changed, reloading.
+INFO 2024-07-12 11:26:39,089 Watching for file changes with StatReloader
+INFO 2024-07-12 11:26:42,579 "GET /finance/15/detail/ HTTP/1.1" 200 13128
+ERROR 2024-07-12 11:26:52,430 Internal Server Error: /finance/download-invoice/15/
+Traceback (most recent call last):
+  File "F:\django-sms-git\new\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\django-sms-git\new\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\django-sms-git\Django-SMS\apps\finance\views.py", line 955, in download_invoice
+    p.drawString(details_x, details_y, "Invoice Time and Date: " + current_datetime.strftime('%H:%M:%S'),{invoice_number})  # Current time
+  File "F:\django-sms-git\new\lib\site-packages\reportlab\pdfgen\canvas.py", line 1614, in drawString
+    if mode is not None: t.setTextRenderMode(mode)
+  File "F:\django-sms-git\new\lib\site-packages\reportlab\pdfgen\textobject.py", line 362, in setTextRenderMode
+    assert mode in (0,1,2,3,4,5,6,7), "mode must be in (0,1,2,3,4,5,6,7)"
+AssertionError: mode must be in (0,1,2,3,4,5,6,7)
+ERROR 2024-07-12 11:26:52,433 "GET /finance/download-invoice/15/ HTTP/1.1" 500 81750
+WARNING 2024-07-12 11:26:52,845 Not Found: /favicon.ico
+WARNING 2024-07-12 11:26:52,846 "GET /favicon.ico HTTP/1.1" 404 7223
+INFO 2024-07-12 11:27:26,549 F:\django-sms-git\Django-SMS\apps\finance\views.py changed, reloading.
+INFO 2024-07-12 11:27:27,267 Watching for file changes with StatReloader
+INFO 2024-07-12 11:27:32,027 F:\django-sms-git\Django-SMS\apps\finance\views.py changed, reloading.
+INFO 2024-07-12 11:27:32,798 Watching for file changes with StatReloader
+ERROR 2024-07-12 11:27:35,911 Internal Server Error: /finance/download-invoice/15/
+Traceback (most recent call last):
+  File "F:\django-sms-git\new\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\django-sms-git\new\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\django-sms-git\Django-SMS\apps\finance\views.py", line 953, in download_invoice
+    p.drawString(details_x, details_y, "Invoice Date and Time: " + current_datetime.strftime('%B %d, %Y'),current_datetime.strftime('%H:%M:%S'))  # Current date
+  File "F:\django-sms-git\new\lib\site-packages\reportlab\pdfgen\canvas.py", line 1614, in drawString
+    if mode is not None: t.setTextRenderMode(mode)
+  File "F:\django-sms-git\new\lib\site-packages\reportlab\pdfgen\textobject.py", line 362, in setTextRenderMode
+    assert mode in (0,1,2,3,4,5,6,7), "mode must be in (0,1,2,3,4,5,6,7)"
+AssertionError: mode must be in (0,1,2,3,4,5,6,7)
+ERROR 2024-07-12 11:27:35,913 "GET /finance/download-invoice/15/ HTTP/1.1" 500 81932
+INFO 2024-07-12 11:27:39,350 "GET /finance/15/detail/ HTTP/1.1" 200 13128
+ERROR 2024-07-12 11:27:40,537 Internal Server Error: /finance/download-invoice/15/
+Traceback (most recent call last):
+  File "F:\django-sms-git\new\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\django-sms-git\new\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\django-sms-git\Django-SMS\apps\finance\views.py", line 953, in download_invoice
+    p.drawString(details_x, details_y, "Invoice Date and Time: " + current_datetime.strftime('%B %d, %Y'),current_datetime.strftime('%H:%M:%S'))  # Current date
+  File "F:\django-sms-git\new\lib\site-packages\reportlab\pdfgen\canvas.py", line 1614, in drawString
+    if mode is not None: t.setTextRenderMode(mode)
+  File "F:\django-sms-git\new\lib\site-packages\reportlab\pdfgen\textobject.py", line 362, in setTextRenderMode
+    assert mode in (0,1,2,3,4,5,6,7), "mode must be in (0,1,2,3,4,5,6,7)"
+AssertionError: mode must be in (0,1,2,3,4,5,6,7)
+ERROR 2024-07-12 11:27:40,539 "GET /finance/download-invoice/15/ HTTP/1.1" 500 81795
+INFO 2024-07-12 11:32:32,138 F:\django-sms-git\Django-SMS\apps\finance\views.py changed, reloading.
+INFO 2024-07-12 11:32:33,057 Watching for file changes with StatReloader
+INFO 2024-07-12 11:32:39,386 "GET /finance/15/detail/ HTTP/1.1" 200 13128
+ERROR 2024-07-12 11:32:40,810 Internal Server Error: /finance/download-invoice/15/
+Traceback (most recent call last):
+  File "F:\django-sms-git\new\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\django-sms-git\new\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\django-sms-git\Django-SMS\apps\finance\views.py", line 953, in download_invoice
+    p.drawString(details_x, details_y, "Invoice Date: " + current_datetime.strftime('%B %d, %Y','%H:%M:%S'),)  # Current date
+TypeError: strftime() takes at most 1 argument (2 given)
+ERROR 2024-07-12 11:32:40,812 "GET /finance/download-invoice/15/ HTTP/1.1" 500 72416
+INFO 2024-07-12 11:35:39,122 "GET /finance/15/detail/ HTTP/1.1" 200 13128
+ERROR 2024-07-12 11:35:40,266 Internal Server Error: /finance/download-invoice/15/
+Traceback (most recent call last):
+  File "F:\django-sms-git\new\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\django-sms-git\new\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\django-sms-git\Django-SMS\apps\finance\views.py", line 953, in download_invoice
+    p.drawString(details_x, details_y, "Invoice Date: " + current_datetime.strftime('%B %d, %Y','%H:%M:%S'),)  # Current date
+TypeError: strftime() takes at most 1 argument (2 given)
+ERROR 2024-07-12 11:35:40,267 "GET /finance/download-invoice/15/ HTTP/1.1" 500 72416
+INFO 2024-07-12 11:36:18,482 F:\django-sms-git\Django-SMS\apps\finance\views.py changed, reloading.
+INFO 2024-07-12 11:36:20,015 Watching for file changes with StatReloader
+INFO 2024-07-12 11:36:21,239 "GET /finance/15/detail/ HTTP/1.1" 200 13128
+INFO 2024-07-12 11:36:22,714 "GET /finance/15/detail/ HTTP/1.1" 200 13128
+INFO 2024-07-12 11:36:24,193 "GET /finance/download-invoice/15/ HTTP/1.1" 200 309071
+INFO 2024-07-12 11:36:58,776 F:\django-sms-git\Django-SMS\apps\finance\views.py changed, reloading.
+INFO 2024-07-12 11:36:59,852 Watching for file changes with StatReloader
+INFO 2024-07-12 11:37:01,592 "GET /finance/15/detail/ HTTP/1.1" 200 13128
+ERROR 2024-07-12 11:37:02,878 Internal Server Error: /finance/download-invoice/15/
+Traceback (most recent call last):
+  File "F:\django-sms-git\new\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\django-sms-git\new\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\django-sms-git\Django-SMS\apps\finance\views.py", line 953, in download_invoice
+    p.drawString(details_x, details_y, "Invoice Date: " + current_datetime.strftime('%B %d, %Y'/'%H:%M:%S'),)  # Current date
+TypeError: unsupported operand type(s) for /: 'str' and 'str'
+ERROR 2024-07-12 11:37:02,880 "GET /finance/download-invoice/15/ HTTP/1.1" 500 72515
+INFO 2024-07-12 11:37:20,030 F:\django-sms-git\Django-SMS\apps\finance\views.py changed, reloading.
+INFO 2024-07-12 11:37:20,831 Watching for file changes with StatReloader
+INFO 2024-07-12 11:37:23,589 "GET /finance/download-invoice/15/ HTTP/1.1" 200 309074
+INFO 2024-07-12 11:38:05,134 F:\django-sms-git\Django-SMS\apps\finance\views.py changed, reloading.
+INFO 2024-07-12 11:38:05,904 Watching for file changes with StatReloader
+INFO 2024-07-12 11:38:11,425 "GET /finance/download-invoice/15/ HTTP/1.1" 200 309074
+INFO 2024-07-12 11:38:33,119 F:\django-sms-git\Django-SMS\apps\finance\views.py changed, reloading.
+INFO 2024-07-12 11:38:33,992 Watching for file changes with StatReloader
+INFO 2024-07-12 11:38:39,745 F:\django-sms-git\Django-SMS\apps\finance\views.py changed, reloading.
+INFO 2024-07-12 11:38:40,521 Watching for file changes with StatReloader
+INFO 2024-07-12 11:38:47,368 F:\django-sms-git\Django-SMS\apps\finance\views.py changed, reloading.
+INFO 2024-07-12 11:38:48,096 Watching for file changes with StatReloader
+INFO 2024-07-12 11:38:50,234 "GET /finance/download-invoice/15/ HTTP/1.1" 200 309089
+INFO 2024-07-12 11:39:08,837 F:\django-sms-git\Django-SMS\apps\finance\views.py changed, reloading.
+INFO 2024-07-12 11:39:09,683 Watching for file changes with StatReloader
+INFO 2024-07-12 11:41:24,779 F:\django-sms-git\Django-SMS\apps\finance\views.py changed, reloading.
+INFO 2024-07-12 11:41:25,492 Watching for file changes with StatReloader
+INFO 2024-07-12 11:41:30,314 F:\django-sms-git\Django-SMS\apps\finance\views.py changed, reloading.
+INFO 2024-07-12 11:41:30,906 Watching for file changes with StatReloader
+INFO 2024-07-12 11:42:01,083 F:\django-sms-git\Django-SMS\apps\finance\views.py changed, reloading.
+INFO 2024-07-12 11:42:01,761 Watching for file changes with StatReloader
+ERROR 2024-07-12 11:42:05,441 Internal Server Error: /finance/download-invoice/15/
+Traceback (most recent call last):
+  File "F:\django-sms-git\new\lib\site-packages\reportlab\lib\utils.py", line 523, in open_for_read
+    return open_for_read_by_name(name,mode)
+  File "F:\django-sms-git\new\lib\site-packages\reportlab\lib\utils.py", line 463, in open_for_read_by_name
+    return open(name,mode)
+FileNotFoundError: [Errno 2] No such file or directory: 'F:\\django-sms-git\\Django-SMS\\staticfiles\\dist/img/school7.png'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\django-sms-git\new\lib\site-packages\reportlab\lib\utils.py", line 530, in open_for_read
+    return BytesIO((datareader if name[:5].lower()=='data:' else rlUrlRead)(name))
+  File "F:\django-sms-git\new\lib\site-packages\reportlab\lib\utils.py", line 476, in rlUrlRead
+    return urlopen(name).read()
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python39\lib\urllib\request.py", line 214, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python39\lib\urllib\request.py", line 517, in open
+    response = self._open(req, data)
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python39\lib\urllib\request.py", line 539, in _open
+    return self._call_chain(self.handle_open, 'unknown',
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python39\lib\urllib\request.py", line 494, in _call_chain
+    result = func(*args)
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python39\lib\urllib\request.py", line 1417, in unknown_open
+    raise URLError('unknown url type: %s' % type)
+urllib.error.URLError: <urlopen error unknown url type: f>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\django-sms-git\new\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\django-sms-git\new\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\django-sms-git\Django-SMS\apps\finance\views.py", line 932, in download_invoice
+    p.drawImage(logo_path, 0.5 * inch, height - 1.5 * inch, width=1 * inch, height=1 * inch)
+  File "F:\django-sms-git\new\lib\site-packages\reportlab\pdfgen\canvas.py", line 1002, in drawImage
+    imgObj = pdfdoc.PDFImageXObject(name, image, mask=mask)
+  File "F:\django-sms-git\new\lib\site-packages\reportlab\pdfbase\pdfdoc.py", line 2109, in __init__
+    src = open_for_read(source)
+  File "F:\django-sms-git\new\lib\site-packages\reportlab\lib\utils.py", line 534, in open_for_read
+    return open_for_read(name,mode)
+  File "F:\django-sms-git\new\lib\site-packages\reportlab\lib\utils.py", line 532, in open_for_read
+    raise IOError('Cannot open resource "%s"' % name)
+OSError: Cannot open resource "F:\django-sms-git\Django-SMS\staticfiles\dist/img/school7.png"
+ERROR 2024-07-12 11:42:05,447 "GET /finance/download-invoice/15/ HTTP/1.1" 500 134491
+INFO 2024-07-12 11:42:23,591 F:\django-sms-git\Django-SMS\apps\finance\views.py changed, reloading.
+INFO 2024-07-12 11:42:24,518 Watching for file changes with StatReloader
+INFO 2024-07-12 11:42:30,105 "GET /finance/15/detail/ HTTP/1.1" 200 13128
+ERROR 2024-07-12 11:42:32,725 Internal Server Error: /finance/download-invoice/15/
+Traceback (most recent call last):
+  File "F:\django-sms-git\new\lib\site-packages\reportlab\lib\utils.py", line 523, in open_for_read
+    return open_for_read_by_name(name,mode)
+  File "F:\django-sms-git\new\lib\site-packages\reportlab\lib\utils.py", line 463, in open_for_read_by_name
+    return open(name,mode)
+FileNotFoundError: [Errno 2] No such file or directory: 'F:\\django-sms-git\\Django-SMS\\staticfiles\\dist\\img\\school7.png'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\django-sms-git\new\lib\site-packages\reportlab\lib\utils.py", line 530, in open_for_read
+    return BytesIO((datareader if name[:5].lower()=='data:' else rlUrlRead)(name))
+  File "F:\django-sms-git\new\lib\site-packages\reportlab\lib\utils.py", line 476, in rlUrlRead
+    return urlopen(name).read()
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python39\lib\urllib\request.py", line 214, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python39\lib\urllib\request.py", line 517, in open
+    response = self._open(req, data)
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python39\lib\urllib\request.py", line 539, in _open
+    return self._call_chain(self.handle_open, 'unknown',
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python39\lib\urllib\request.py", line 494, in _call_chain
+    result = func(*args)
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python39\lib\urllib\request.py", line 1417, in unknown_open
+    raise URLError('unknown url type: %s' % type)
+urllib.error.URLError: <urlopen error unknown url type: f>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\django-sms-git\new\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\django-sms-git\new\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\django-sms-git\Django-SMS\apps\finance\views.py", line 932, in download_invoice
+    p.drawImage(logo_path, 0.5 * inch, height - 1.5 * inch, width=1 * inch, height=1 * inch)
+  File "F:\django-sms-git\new\lib\site-packages\reportlab\pdfgen\canvas.py", line 1002, in drawImage
+    imgObj = pdfdoc.PDFImageXObject(name, image, mask=mask)
+  File "F:\django-sms-git\new\lib\site-packages\reportlab\pdfbase\pdfdoc.py", line 2109, in __init__
+    src = open_for_read(source)
+  File "F:\django-sms-git\new\lib\site-packages\reportlab\lib\utils.py", line 534, in open_for_read
+    return open_for_read(name,mode)
+  File "F:\django-sms-git\new\lib\site-packages\reportlab\lib\utils.py", line 532, in open_for_read
+    raise IOError('Cannot open resource "%s"' % name)
+OSError: Cannot open resource "F:\django-sms-git\Django-SMS\staticfiles\dist\img\school7.png"
+ERROR 2024-07-12 11:42:32,731 "GET /finance/download-invoice/15/ HTTP/1.1" 500 134553
+INFO 2024-07-12 11:43:02,303 F:\django-sms-git\Django-SMS\apps\finance\views.py changed, reloading.
+INFO 2024-07-12 11:43:03,118 Watching for file changes with StatReloader
+ERROR 2024-07-12 11:43:05,002 Internal Server Error: /finance/download-invoice/15/
+Traceback (most recent call last):
+  File "F:\django-sms-git\new\lib\site-packages\reportlab\lib\utils.py", line 523, in open_for_read
+    return open_for_read_by_name(name,mode)
+  File "F:\django-sms-git\new\lib\site-packages\reportlab\lib\utils.py", line 463, in open_for_read_by_name
+    return open(name,mode)
+FileNotFoundError: [Errno 2] No such file or directory: 'F:\\django-sms-git\\Django-SMS\\staticfiles\\static/dist/img/school7.png'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\django-sms-git\new\lib\site-packages\reportlab\lib\utils.py", line 530, in open_for_read
+    return BytesIO((datareader if name[:5].lower()=='data:' else rlUrlRead)(name))
+  File "F:\django-sms-git\new\lib\site-packages\reportlab\lib\utils.py", line 476, in rlUrlRead
+    return urlopen(name).read()
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python39\lib\urllib\request.py", line 214, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python39\lib\urllib\request.py", line 517, in open
+    response = self._open(req, data)
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python39\lib\urllib\request.py", line 539, in _open
+    return self._call_chain(self.handle_open, 'unknown',
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python39\lib\urllib\request.py", line 494, in _call_chain
+    result = func(*args)
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python39\lib\urllib\request.py", line 1417, in unknown_open
+    raise URLError('unknown url type: %s' % type)
+urllib.error.URLError: <urlopen error unknown url type: f>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\django-sms-git\new\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "F:\django-sms-git\new\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\django-sms-git\Django-SMS\apps\finance\views.py", line 932, in download_invoice
+    p.drawImage(logo_path, 0.5 * inch, height - 1.5 * inch, width=1 * inch, height=1 * inch)
+  File "F:\django-sms-git\new\lib\site-packages\reportlab\pdfgen\canvas.py", line 1002, in drawImage
+    imgObj = pdfdoc.PDFImageXObject(name, image, mask=mask)
+  File "F:\django-sms-git\new\lib\site-packages\reportlab\pdfbase\pdfdoc.py", line 2109, in __init__
+    src = open_for_read(source)
+  File "F:\django-sms-git\new\lib\site-packages\reportlab\lib\utils.py", line 534, in open_for_read
+    return open_for_read(name,mode)
+  File "F:\django-sms-git\new\lib\site-packages\reportlab\lib\utils.py", line 532, in open_for_read
+    raise IOError('Cannot open resource "%s"' % name)
+OSError: Cannot open resource "F:\django-sms-git\Django-SMS\staticfiles\static/dist/img/school7.png"
+ERROR 2024-07-12 11:43:05,006 "GET /finance/download-invoice/15/ HTTP/1.1" 500 134793
+INFO 2024-07-12 11:45:50,520 F:\django-sms-git\Django-SMS\apps\finance\views.py changed, reloading.
+INFO 2024-07-12 11:45:51,392 Watching for file changes with StatReloader
+INFO 2024-07-12 11:46:31,011 F:\django-sms-git\Django-SMS\apps\finance\views.py changed, reloading.
+INFO 2024-07-12 11:46:31,970 Watching for file changes with StatReloader
+INFO 2024-07-12 11:46:37,586 "GET /finance/download-invoice/15/ HTTP/1.1" 200 309087
+INFO 2024-07-12 11:47:49,561 "GET /finance/15/detail/ HTTP/1.1" 200 13128
+INFO 2024-07-12 11:47:50,312 "GET /finance/download-invoice/15/ HTTP/1.1" 200 309085
