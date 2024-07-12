@@ -4249,3 +4249,9 @@ INFO 2024-07-12 10:44:55,580 Watching for file changes with StatReloader
 INFO 2024-07-12 10:47:19,924 Watching for file changes with StatReloader
 INFO 2024-07-12 10:47:23,955 "GET / HTTP/1.1" 200 11184
 INFO 2024-07-12 10:47:26,621 "GET / HTTP/1.1" 200 11184
+INFO 2024-07-12 10:48:58,957 C:\Users\prasa\OneDrive\Documents\Django-sms-git\Django-SMS\apps\corecode\views.py changed, reloading.
+INFO 2024-07-12 10:49:00,361 Watching for file changes with StatReloader
+INFO 2024-07-12 10:49:01,769 C:\Users\prasa\OneDrive\Documents\Django-sms-git\Django-SMS\school_app\views.py changed, reloading.
+INFO 2024-07-12 10:49:03,319 Watching for file changes with StatReloader
+INFO 2024-07-12 10:49:04,739 C:\Users\prasa\OneDrive\Documents\Django-sms-git\Django-SMS\school_app\views.py changed, reloading.
+INFO 2024-07-12 10:49:06,551 Watching for file changes with StatReloader
