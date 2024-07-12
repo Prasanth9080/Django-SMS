@@ -3826,3 +3826,19 @@ INFO 2024-07-12 10:20:34,508 "GET /static/plugins/Datatables/datatables.min.css 
 INFO 2024-07-12 10:20:34,610 "GET /static/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 304 0
 INFO 2024-07-12 10:20:43,141 "GET /password_change/ HTTP/1.1" 200 11762
 INFO 2024-07-12 10:20:46,252 "GET / HTTP/1.1" 200 11184
+INFO 2024-07-12 10:23:35,165 C:\Users\prasa\OneDrive\Documents\Django-sms-git\Django-SMS\apps\finance\forms.py changed, reloading.
+INFO 2024-07-12 10:23:36,687 Watching for file changes with StatReloader
+INFO 2024-07-12 10:23:38,638 C:\Users\prasa\OneDrive\Documents\Django-sms-git\Django-SMS\school_app\settings.py changed, reloading.
+INFO 2024-07-12 10:23:40,050 Watching for file changes with StatReloader
+INFO 2024-07-12 10:23:45,896 C:\Users\prasa\OneDrive\Documents\Django-sms-git\Django-SMS\apps\finance\models.py changed, reloading.
+INFO 2024-07-12 10:23:46,915 Watching for file changes with StatReloader
+INFO 2024-07-12 10:23:55,873 C:\Users\prasa\OneDrive\Documents\Django-sms-git\Django-SMS\school_app\settings.py changed, reloading.
+INFO 2024-07-12 10:23:57,723 Watching for file changes with StatReloader
+INFO 2024-07-12 10:24:23,637 Watching for file changes with StatReloader
+INFO 2024-07-12 10:24:29,190 "GET / HTTP/1.1" 200 11184
+INFO 2024-07-12 10:24:35,409 "GET / HTTP/1.1" 200 11184
+INFO 2024-07-12 10:24:39,528 "GET /password_change/ HTTP/1.1" 200 11762
+INFO 2024-07-12 10:24:41,780 "GET / HTTP/1.1" 200 11184
+INFO 2024-07-12 10:24:45,019 "GET /finance/list/ HTTP/1.1" 200 15135
+INFO 2024-07-12 10:24:48,523 "GET /finance/12/detail/ HTTP/1.1" 200 13092
+INFO 2024-07-12 10:24:50,125 "GET /finance/download-invoice/12/ HTTP/1.1" 200 37383
